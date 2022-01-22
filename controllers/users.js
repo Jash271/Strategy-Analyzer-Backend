@@ -91,7 +91,7 @@ exports.Login = async (req, res, next) => {
       token: token,
       user: user,
     });
-  } catch (error) {
+  } catch (err) {
     console.log(err.message);
     return res.status(500).json({ msg: 'Internal Server Error' });
   }
